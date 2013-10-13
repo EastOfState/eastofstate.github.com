@@ -1,0 +1,53 @@
+h1, p {
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+a {
+    border-bottom: 1px dotted;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    border-bottom-color: #0066cc;
+    color: #0066cc;
+}
+
+.window {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -225px;
+    margin-top: -375px;
+    width: 500px;
+    height: 750px;
+    text-align: center;        
+    color: black;
+    font-size: 48pt;
+    line-height: 85%;
+}
+
+.logo {
+    width: 200px;
+}
+
+#east {
+    font-weight: 100;
+    font-size: 48pt;
+}
+
+#of-state {
+    font-weight: 800;
+    font-size: 36pt;
+}
+
+#subtext {
+    font-size: 24pt;
+    font-weight: 200;
+}
+
+#feature-text {
+    font-size: 24pt;
+    font-weight: 200;
+}
