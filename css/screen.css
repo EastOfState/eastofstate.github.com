@@ -50,12 +50,12 @@ p {
     filter:alpha(opacity=100); /* For IE8 and earlier */
 }
 
-.article, .video, .highlights-header, .highlights, .editor, .footer {
+.article, .video, .highlights-header, .highlights, .editor, .disqus, .footer {
     margin-left: 100px;
     margin-right: 100px;
 }
 
-.article, .video, .highlights, .editor, .footer {
+.article, .video, .highlights, .editor, .disqus, .footer {
     margin-top: 25px;
     margin-bottom: 25px;
 }
@@ -75,7 +75,7 @@ p {
 .article #author {
     margin: 0;
     color: #9c9c9c;
-    font-size: 12pt;
+    font-size: 11pt;
 }
 
 .article h1 {
@@ -130,8 +130,8 @@ p {
 }
 
 .editor #avatar {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     float:left;
 }
 
@@ -139,7 +139,7 @@ p {
     float:left;
     margin-right: 50px;
     margin-left: 50px;
-    height: 80px;
+    height: 60px;
 }
 
 .editor-text p {
@@ -149,13 +149,17 @@ p {
 
 .editor-text .name {
     font-weight: 800;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 0;
 }
 
 .editor-text .title {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.disqus a {
+    color: black;
 }
 
 .footer {

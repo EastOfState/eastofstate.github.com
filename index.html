@@ -7,15 +7,94 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="splash pure-g-r">
-        <div class="pure-u">
-            <div class="window">
-                    <img src="img/LogoBW.png">
-                <p><span id="east">East</span> <span id="of-state">OF STATE</span>
-                <br \><span id="subtext">Discover Kansas City.</span></p>
-                <p id="feature-text">October Feature: <a href="westside-storey.html">Westside Storey</a></p>
+    <div class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+        <a href="index.html" class="pure-menu-heading">East <strong>of State</strong></a>
+        <ul>
+            <li class="pure-menu-selected"><a href="westside-storey.html">Feature</a></li>
+        </ul>
+    </div>
+    <div class="banner">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/LogoColorFlat.png" width="100px">
+            </a>
+        </div>
+    </div>
+
+    <div class="pure-g-r" id="layout">
+        <div class="pure-u-1">
+            <div class="content">
+                <!-- A wrapper for all the blog posts -->
+                <div style="margin-bottom:50px" class="posts">
+                    <h1 class="content-subhead">October Feature</h1>
+                    <section class="post">
+                        <header class="post-header">
+                            <img class="post-avatar"
+                                 src="img/staff-portraits/sergchael.png"
+                                 height="60" width="60">
+
+                                 <h1 class="post-title"><a href="westside-storey.html">Antique Shop for Generation Y</a></h1>
+
+                            <p class="post-meta">
+Feature by Mikhail Marchenko and Serge Nevsky on October 13, 2013
+                            </p>
+                        </header>
+
+                        <div class="post-description">
+                            <p>
+                            History is precious and can teach us a lot about our past. Sometimes, it can even give us a glimpse into the future. With this in mind Chris Harrington, the founder of Westside Storey, took a risk opening a small antique shop in an underdeveloped area with lots of potential. This bustling area known as 17th and Summit, is located in the Westside neighborhood and is creating a stir around the arts district of downtown Kansas City.
+                            </p> 
+                            <p class="continue"><a href="westside-storey.html">Continue Reading</a></p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="posts">
+                    <h1 class="content-subhead">Moments</h1>
+
+                    <section class="post">
+                        <header class="post-header">
+                            <img class="post-avatar"
+                                 src="img/staff-portraits/serge.png"
+                                 height="60" width="60">
+
+                            <h1 class="post-title">A taste of El Salvador</h1>
+
+                            <p class="post-meta">
+                                By Serge Nevsky on October 19, 2013
+                            </p>
+                        </header>
+
+                        <div class="post-description">
+                            <p>
+                            The only palm tree with neon lights you'll find in the metro area is outside of a charming Salvadorian restaurant in downtown Overland Park. <a href="http://www.downtownop.org/merchant_main.html?id=470&type=0">El Savadore&ntilde;o's</a> reasonable prices for a hefty portion impressed me on an outing with former co-workers as we stuffed ourselves before heading to The Peanut next door. The authentic food and personable staff makes up for the tacky decor in this Central American restaurant. Make your beverage choice a cup of <a href="http://en.wikipedia.org/wiki/Horchata">horchata</a>.
+                            </p>
+                            <div class="highlight">
+                                <iframe width="500px" height="120" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/116134669&amp;color=000000&amp;auto_play=false&amp;show_artwork=true"></iframe>
+
+                            </div>
+                        </div>
+                    </section>
+
             </div>
         </div>
     </div>
+    <div class="footer pure-g-r">
+        <div class="pure-u">
+            <p>Copyright © 2013 East of State.</p>
+        </div>
+    </div>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44927276-1', 'eastofstate.com');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>
