@@ -17,6 +17,10 @@ p {
     line-height: 150%;
 }
 
+a {
+    text-decoration: none;
+}
+
 .splash {
     background: transparent url('http://eastofstate.com/img/skyline-day.jpg') 0 0 no-repeat ;
 }
