@@ -3,7 +3,7 @@ body {
 }
 
 h1, p {
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", "Trebuchet MS", sans-serif;
 }
 
 h1 {
@@ -133,6 +133,12 @@ a {
     padding-top: 25px;
 }
 
+.editor .written {
+    color: #9c9c9c;
+    font-size: 10pt;
+    text-transform: uppercase;
+}
+
 .editor #avatar {
     width: 60px;
     height: 60px;
@@ -174,4 +180,8 @@ a {
 .footer p {
     color: #9c9c9c;
     font-size: 12pt;
+}
+
+.footer .social {
+    text-align: right;
 }
