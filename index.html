@@ -6,12 +6,20 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/social.css">
+    <script src="http://yui.yahooapis.com/3.12.0/build/yui/yui-min.js"></script>
 </head>
 <body>
-    <div class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+    <div id="demo-horizontal-menu" class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
         <a href="index.html" class="pure-menu-heading">East <strong>of State</strong></a>
-        <ul>
-            <li class="pure-menu-selected"><a href="hatties.html">Feature</a></li>
+        <ul id="std-menu-items">
+            <li>
+                <a href="#">Features</a>
+                <ul>
+                    <li><a href="hatties.html">Hattie's Fine Coffee</a></li>
+                    <li><a href="westside-storey.html">Westside Storey</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
         </ul>
     </div>
     <div class="banner">
@@ -23,7 +31,6 @@
         <div class="caption"><span>Dedicated to discovering novel places in Kansas City.</span></div>
     </div>
 
-    <div class="pure-g-r" id="layout">
         <div class="pure-u-1">
             <div class="content">
                 <!-- A wrapper for all the blog posts -->
@@ -136,6 +143,7 @@ Feature by Mikhail Marchenko and Serge Nevsky on October 13, 2013
         </div>
     </div>
 
+<!-- Pure Menu Dropdowns -->
 <!-- Google Analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -146,6 +154,22 @@ Feature by Mikhail Marchenko and Serge Nevsky on October 13, 2013
   ga('create', 'UA-44927276-1', 'eastofstate.com');
   ga('send', 'pageview');
 
+YUI({
+    classNamePrefix: 'pure'
+}).use('gallery-sm-menu', function (Y) {
+
+    var horizontalMenu = new Y.Menu({
+        container         : '#demo-horizontal-menu',
+        sourceNode        : '#std-menu-items',
+        orientation       : 'horizontal',
+        hideOnOutsideClick: false,
+        hideOnClick       : false
+    });
+
+    horizontalMenu.render();
+    horizontalMenu.show();
+
+});
 </script>
 </body>
 </html>

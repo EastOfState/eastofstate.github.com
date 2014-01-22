@@ -185,3 +185,13 @@ a {
 .footer .social {
     text-align: right;
 }
+
+.social img {
+    opacity: 0.5;
+    filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.social img:hover {
+    opacity: 1;
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+}

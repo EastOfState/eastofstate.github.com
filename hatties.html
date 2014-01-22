@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
     <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="css/social.css">
+    <script src="http://yui.yahooapis.com/3.12.0/build/yui/yui-min.js"></script>
 
     <!-- fancyBox stuff -->
     <script type="text/javascript" src="fancybox/lib/jquery-1.10.1.min.js"></script>
@@ -29,10 +30,17 @@
     </style>
 </head>
 <body>
-    <div class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-        <a href="index.html" class="pure-menu-heading">East <b>of State</b></a>
-        <ul>
-            <li class="pure-menu-selected"><a href="hatties.html">Feature</a></li>
+    <div id="demo-horizontal-menu" class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+        <a href="index.html" class="pure-menu-heading">East <strong>of State</strong></a>
+        <ul id="std-menu-items">
+            <li>
+                <a href="#">Features</a>
+                <ul>
+                    <li class="pure-menu-selected"><a href="hatties.html">Hattie's Fine Coffee</a></li>
+                    <li><a href="westside-storey.html">Westside Storey</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
         </ul>
     </div>
     <div class="banner">
@@ -55,6 +63,7 @@
             <p>Being a family owned establishment, David and Gretchen split responsibilities on roasting coffee beans and baking goods respectively. Green coffee beans are imported from many regions of the world including Central and South America, Africa and Indonesia. David then uses a speciality coffee roaster that stands prominently next to the bar. The roasting process differs depending on the place of origin. Lighter roasts have more vibrancy and caffeine, while dark roasts give earthy and smoky tones with less caffeine.</p>
             <p>Homemade baked goods are prepared by Gretchen herself, which include all of the usual favorites. Hattie’s offers breakfast and brunch menus with gluten-free options as well as fresh fruit smoothies.</p>
             <p>Hattie’s satisfies more than just our craving for a cup of coffee, it satisfies our craving for an intimate coffee shop experience in Johnson County.</p>
+            <p><a target="_new" href="img/hatties/coupon.png">&#9985; Download the Buy One Get One 1/2 Off Coupon</a></p>
         </div>
     </div>
     <div class="video pure-g-r">
@@ -132,6 +141,22 @@
   ga('create', 'UA-44927276-1', 'eastofstate.com');
   ga('send', 'pageview');
 
+YUI({
+    classNamePrefix: 'pure'
+}).use('gallery-sm-menu', function (Y) {
+
+    var horizontalMenu = new Y.Menu({
+        container         : '#demo-horizontal-menu',
+        sourceNode        : '#std-menu-items',
+        orientation       : 'horizontal',
+        hideOnOutsideClick: false,
+        hideOnClick       : false
+    });
+
+    horizontalMenu.render();
+    horizontalMenu.show();
+
+});
 </script>
 </body>
 </html>
