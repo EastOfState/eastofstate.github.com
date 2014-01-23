@@ -110,6 +110,13 @@ a {
     font-style: italic;
 }
 
+.map {
+    width: 300px;
+    float: left;
+    caption-side: right;
+    margin-right: 20px;
+}
+
 .video {
     display: table;
     margin-left: auto;
@@ -140,8 +147,8 @@ a {
 }
 
 .editor #avatar {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     float:left;
 }
 
@@ -149,18 +156,17 @@ a {
     float:left;
     margin-right: 50px;
     margin-left: 50px;
-    height: 60px;
+    height: 40px;
 }
 
 .editor-text p {
     line-height: 125%;
-    font-size: 12pt;
+    font-size: 11pt;
 }
 
 .editor-text .name {
     font-weight: 800;
-    margin-top: 10px;
-    margin-bottom: 0;
+    margin: 0px;
 }
 
 .editor-text .title {

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>East of State</title>
+    <link>http://eastofstate.com/</link>
+    <description>A terrific new website about Kansas City's overlooked places.</description>
+    <item>
+       <title>Antique Shop for Generation Y</title>
+       <link>http://eastofstate.com/westside-storey.html</link>
+       <description>History is precious and can teach us a lot about our past. Sometimes, it can even give us a glimpse into the future. With this in mind Chris Harrington, the founder of Westside Storey, took a risk opening a small antique shop in an underdeveloped area with lots of potential. This bustling area known as 17th and Summit, is located in the Westside neighborhood and is creating a stir around the arts district of downtown Kansas City.</description>
+    </item>
+    <item>
+       <title>Hattie's Fine Coffee</title>
+       <link>http://eastofstate.com/hatties.html</link>
+       <description>Among the suburban familiarity of Prairie Village lies a cozy oasis. Hattie’s Fine Coffee offers the smoothest caffeinated boost in town. This homey establishment, located on 83rd and Mission Rd., is a can’t-miss cafe in the newly-refinished Corinth Square.</description>
+    </item>
+  </channel>
+</rss>
