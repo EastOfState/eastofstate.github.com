@@ -22,7 +22,7 @@ a {
 }
 
 .splash {
-    background: transparent url('http://eastofstate.com/img/skyline-day.jpg') 0 0 no-repeat ;
+    background: transparent url('https://raw.githubusercontent.com/EastOfState/eastofstate.github.com/master/img/skyline-blur.jpg') 0 0 no-repeat ;
 }
 
 .pure-menu {
@@ -30,7 +30,7 @@ a {
 }
 
 .banner {
-    background: transparent url('http://eastofstate.com/img/westside-storey/west-side-banner.jpg') 0 0 no-repeat ;
+    background: transparent url('https://raw.githubusercontent.com/EastOfState/eastofstate.github.com/master/img/westside-storey/west-side-banner.jpg') 0 0 no-repeat ;
     text-align: center;
     background-size: cover;
     height: 375px;
